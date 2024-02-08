@@ -1,0 +1,17 @@
+{% extends "basetemplate.html" %}
+{% load static %}
+{% block title %}
+<title>เกียวกับเรา</title>
+{% endblock %}
+
+    <h1>My Blog</h1>
+    {% for post in posts %}
+        <h2>{{post.title}}</h2>
+        <p>{{post.title}}</p>
+        </hr>
+    {% endfor %}
+     <img src="{% static 'images/01.jpg' %}">
+    
+    {% block content %}
+    {% endblock %}
+

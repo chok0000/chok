@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet"href="{% static 'style.css'%}">
+   
+</head>
+<body>
+    <h1 style="color: darkred;">หน้าหลัก</h1>
+    <a href="/">หน้าแรก</a>
+    <a href="/about">หน้าสอง</a>
+    <a href="/gallery">หน้าสาม</a>
+    <hr>
+        <h1>{{name}}</h1>
+        <h2>อายุ {{age}} ปี</h2>
+    <hr>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, commodi optio! Placeat eos, officia asperiores reiciendis distinctio nam dicta? Laborum odit ducimus cumque deserunt debitis aut eveniet eligendi officiis tempore!</p>
+    <hr>
+    <img src="{% static 'image/c1.jpg'%}">
+</body>
+</html>
